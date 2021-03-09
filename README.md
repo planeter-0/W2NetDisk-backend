@@ -1,12 +1,13 @@
 # W2NetDisk-backend
 
 > Copyright Planeter 2021 All Rights Reserved.
-
+>
 > Only used for the cooperative assessment of W2OL
-
+>
 > A Java backend project 
 
-> Frontend project @MakePoloChina [W2NetDisk](https://github.com/MarkPoloChina/W2NetDisk)
+> Frontend project [W2NetDisk](https://github.com/MarkPoloChina/W2NetDisk) [@MakePoloChina](https://github.com/MarkPoloChina)
+
 ## 项目结构
 
 ![项目结构](http://planeter.icu:8088/view/130)
