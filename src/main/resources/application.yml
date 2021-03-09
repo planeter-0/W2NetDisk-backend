@@ -1,0 +1,27 @@
+#公共配置
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 1000MB
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        dialect: org.hibernate.dialect.MySQL57Dialect
+  profiles:
+    active: dev
+springdoc:
+  api-docs:
+    enabled: true
+disksize: 21474836480
+logging:
+  level:
+    root: info
+  file:
+    path: ./logs

@@ -1,0 +1,11 @@
+#开发环境配置
+server:
+  port: 8088
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/netdisk?serverTimezone=GMT%2B8
+    username: root
+    password: null
+#文件存储路径
+filepath: E:\\NetDiskFiles
