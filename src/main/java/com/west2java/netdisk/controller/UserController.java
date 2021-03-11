@@ -38,6 +38,7 @@ public class UserController {
             },
             responses = {@ApiResponse(responseCode = "200", description = "操作成功")})
     @PostMapping("/register")
+    @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "用户名和密码",required = true)
     public ResponseData register(@RequestBody String jsonStr) {
         String username = JSONObject.parseObject(jsonStr).getString("username");
         String password = JSONObject.parseObject(jsonStr).getString("password");

@@ -191,6 +191,7 @@ public class FileController {
     @Operation(summary = "删除多个文件",
             responses = {@ApiResponse(responseCode = "200", description = "操作成功")})
     @PostMapping("/delete")
+    @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "整型文件id列表",required = true)
     public ResponseData delete(@RequestBody List<Integer> fileIdList) throws IOException {
         fileService.delete(fileIdList);
         return new ResponseData(ExceptionMsg.SUCCESS, fileIdList);
